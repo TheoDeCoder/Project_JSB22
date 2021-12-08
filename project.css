@@ -1,0 +1,257 @@
+/* cho tất cả phần tử của web */
+* {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    user-select: none;
+}
+
+/* hiệu ứng trượt trên web mượt hơn */
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* (1) trang trí thanh nav bar ở đầu web */
+.nav_container {
+    display: flex;
+    justify-content: start;
+    position: fixed;
+    /* top: 0;
+    left: 0; */
+    width: 100%;
+    background-image: linear-gradient(to right,#ee9ca7,#ffdde1);
+}
+
+/* chỉnh sửa bên trong nav bar */
+.nav_list {
+    display: flex;
+    margin-right: 20px;
+}
+
+/* chỉnh sửa thẻ <a> trong nav_list */
+/* 1 rem = 16px */
+.nav_list a {
+    display: block;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+/* xóa dấu chấm trc tag <ul> */
+ul {
+    list-style-type: none;  
+}
+
+/* trang trí chữ cho thẻ <a> bên trong thẻ <li> */
+li a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    /* transition: color 0.3s ease; */
+    border: 2px none;
+}
+
+/* trang trí chữ cho thẻ <a> bên trong thẻ <li> */
+li a:hover {
+    color: #f64f59; 
+    background-color: #C6FFDD;
+}
+
+.li_css {
+  background-color: #C6FFDD;
+  color: #f64f59;
+}
+/* kết thúc trang trí nav bar ở đầu web */
+
+
+
+
+/* (2) trang trí welcome */
+.welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right,#654ea3,#eaafc8);
+    font-size: 80px;
+    color: white;
+}
+
+ /* trang trí thẻ h1(tiêu đề) trong welcome */
+h1 {
+    font-family: "Open Sans", sans-serif;
+}
+
+
+/* trang trí thẻ <p>(dòng giới thiệu) trong welcome */
+.welcome > p {
+    font-size: 4rem;
+    font-weight: 100;
+    font-style: italic;
+    color: #be3144
+}
+/* kết thúc trang trí welcome */
+
+
+
+
+/* (3) trang trí projects */
+/* trang trí tiêu đề thẻ <h2> */
+.projects_header {
+    font-size: 45px;
+    color:#f0f0f0;
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.2rem solid #f0f0f0;
+
+}
+
+/* trang trí projects_container */
+.projects_container {
+    text-align: center;
+    padding: 10rem 2rem;
+    background-image: linear-gradient(to right,#00b09b,#96c93d);
+}
+
+/* trang trí cho projects (section) */
+.projects_div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 50px;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+.projects_a {
+    background: #303841;
+    border-radius: 2px;
+}
+
+.code {
+    color: #303841;
+    transition: color 0.3s ease-out;
+}
+
+
+.projects_a:hover .code {
+    color: #ff7f50;
+}
+
+/* trang trí projects_img */
+.projects_img {
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+}
+
+.projects_p {
+    font-size: 1.7rem;
+    padding: 2rem 0.5rem;
+    color: white;
+}
+/* kết thúc trang trí projects */
+
+
+
+/* trang trí cho footer */
+/* button */
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+  }
+  
+.btn {
+    font-size: 2rem;
+    background: #303841;
+  }
+  
+  /* contact */
+  .contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 40vh;
+    padding: 0 2rem;
+    background: #303841;
+    color: white;
+  }
+  
+  .contact-section-header > h2 {
+    font-size: 3rem;
+    font-family: "Ubuntu", sans-serif;
+  }
+  .contact-section-header > p {
+    margin-top: 0.3rem;
+    font-size: 2rem;
+    font-style: italic;
+    font-family: "Inter", sans-serif;
+  }
+  .contact-div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 980px;
+    margin-top: 1rem;
+
+    color: white;
+  }
+  .contact-details {
+    font-size: 1.5rem;
+    color: white;
+    padding: 10px;
+    font-family: "Ubuntu", sans-serif;
+  }
+  
+  .contact-details:hover {
+    transform: translateY(8px);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 40vh;
+    padding: 0 2rem;
+    background: #303841;
+    color: white;
+}
+
+
